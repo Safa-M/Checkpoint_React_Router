@@ -6,7 +6,7 @@ import { AddFilm } from "./Components/AddFilm/AddFilm";
 import Search from "./Components/Search/Search";
 import Filter from "./Components/Filter/Filter";
 import Details from "./Components/Details";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   const movieslist = [
@@ -60,7 +60,6 @@ function App() {
   };
 
   return (
-    <Router>
       <section className="App">
         <div className="movieList">
           <Switch>
@@ -96,7 +95,6 @@ function App() {
           </Switch>
         </div>
       </section>
-    </Router>
   );
 }
 
